@@ -7,17 +7,30 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>NewProject</title>
 </head>
-<body>
-    <h1>Hello, nice. Ça ne fonctionne pas.</h1>
+<body style="background-color: palevioletred;">
+    <h1>Hello, nice. J'apprends.</h1>
     <ul>
         {{ range (where .Pages "Section" "blog") }}
+           
+        
         <li>
           <a href="{{ .RelPermalink }}">
             {{ .Title }}
+            <p class="description">{{ .Params.description }}</p>
           </a>
         </li>
         {{ end }}
-      </ul>
+    </ul>
+
+    {{ define "main" }}
+{{ .Content }}
+{{- partial "posts.html" . -}}
+{{ end }}
+    
+    
+   
+
+
 </body>
 </html>
 
