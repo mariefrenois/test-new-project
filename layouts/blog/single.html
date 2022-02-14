@@ -1,18 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>{{ .Title }}</title>
-  </head>
-  <body style="background-color: blue; color: gainsboro;">
-    <h1 style="font-family: sans-serif;">{{ .Title }}</h1>
-    <p class="date">{{ .Date }}</p>
+
+{{- partial "head.html" . -}}
+{{- partial "header.html" . -}}
+<style>
+    .titre-date {margin-bottom: 20px;}
+    img {width: 50%;}
+    .single-post {
+        margin: 20px 50px;
+        padding: 30px; 
+        background-color: hotpink;
+    }
+    .description {
+        width: 50%;
+        font-style: italic;
+        float: right;
+        font-size: 40px;
+        transform: rotate(-15deg);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        color: #c0e8ff;
+        position: relative;
+        z-index: 1000;
+    }
+    article {
+        font-size: 20px;
+    }
+
+</style>
+<section class="single-post">
+
+    <div class="titre-date" style="font-family: sans-serif;">
+        <span style="text-transform: uppercase; font-size: 40px;">{{ .Title }}</span>
+        <span style="float: right;" class="date">{{ .Date.Format "02.01.2006" }}</span>
+    </div>
+    
+    <img src="{{ .Params.image }}"/>
+    
     <p class="description">{{ .Params.description }}</p>
     <article class="content">
       {{ .Content }}
     </article>
-  </body>
-</html>
+
+    <!-- IMAGE PROBLEME : saved in static but not in resources ! -->
+
+    {{ with .Resources.GetMatch "**.jpg" }}
+    <img src="data:{{ .MediaType }};base64,{{ .Content | base64Encode }}">
+    {{ end }}
+    
+
+
+</section>
+
+{{- partial "footer.html" . -}}
 

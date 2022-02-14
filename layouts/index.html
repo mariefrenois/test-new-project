@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <title>NewProject</title>
-</head>
-<body style="background-color: palevioletred;">
-    <h1>Hello, nice. J'apprends.</h1>
-    <ul>
-        {{ range (where .Pages "Section" "blog") }}
-           
-        
-        <li>
-          <a href="{{ .RelPermalink }}">
-            {{ .Title }}
-            <p class="description">{{ .Params.description }}</p>
-          </a>
-        </li>
-        {{ end }}
-    </ul>
-
-    {{ define "main" }}
-{{ .Content }}
-{{- partial "posts.html" . -}}
-{{ end }}
-    
-    
-   
 
 
-</body>
-</html>
+{{- partial "head.html" . -}}
+    {{- partial "header.html" . -}}
+    <div id="content" class="{{ .Type }} {{ .Slug }}">
+      {{- .Content -}}
 
+            {{ with .Site.GetPage "/blog" }}
+                <a href="{{ .RelPermalink }}">
+                {{ .Title }}</a>
+            {{ end }}
+            
+        <!-- <ul>
+            {{ range (where .Pages "Section" "blog") }}
+            
+            
+            <li>
+            <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+                <p class="description">{{ .Params.description }}</p>
+            </a>
+            </li>
+            {{ end }}
+        </ul> -->
+
+    </div>
+{{- partial "footer.html" . -}}
+  
