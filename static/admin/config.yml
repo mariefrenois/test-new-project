@@ -19,3 +19,19 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime', default: "", format: 'Do MMM YY', date_format: "DD.MM.YYYY"}
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+    - name: 'projet'
+    label: 'Projet'
+    folder: 'content/projet'
+    create: true
+    slug: 'projet-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', default: "", format: 'Do MMM YY', date_format: "DD.MM.YYYY"}
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+       - {label: "URL", name: url, widget: string}
+       - { label: 'Nom du lien', name: 'linkname', widget: 'string' }
