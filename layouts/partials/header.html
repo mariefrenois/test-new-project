@@ -2,9 +2,16 @@
     body {
     background-color: #78e1a2;
     margin: 0;
-}
+    }
+    h3 a {color: black; text-decoration: none;}
+    h3 a:hover {color: rgba(0, 0, 0, 0.39);}
 </style>
 <body>
 <header>
-    <h3 style="font-family: sans-serif; text-align: center;">Testing Hugo & Netlify</h3>
+    <h3 style="font-family: sans-serif; text-align: center;">
+    {{ with .Site.GetPage }}
+                <a href="{{ .RelPermalink }}">
+                    Testing Hugo & Netlify</a>
+            {{ end }}
+    </h3>
 </header>

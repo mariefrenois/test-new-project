@@ -1,5 +1,3 @@
-
-
 {{- partial "head.html" . -}}
     {{- partial "header.html" . -}}
     <div id="content" class="{{ .Type }} {{ .Slug }}">
@@ -10,18 +8,7 @@
                 {{ .Title }}</a>
             {{ end }}
             
-        <!-- <ul>
-            {{ range (where .Pages "Section" "blog") }}
-            
-            
-            <li>
-            <a href="{{ .RelPermalink }}">
-                {{ .Title }}
-                <p class="description">{{ .Params.description }}</p>
-            </a>
-            </li>
-            {{ end }}
-        </ul> -->
+      
 
     </div>
 {{- partial "footer.html" . -}}
