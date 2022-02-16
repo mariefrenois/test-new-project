@@ -27,6 +27,10 @@
     article {
         font-size: 20px;
     }
+    ul.galerie {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 
 </style>
 <section class="single-post">
@@ -40,6 +44,19 @@
     <article class="content">
       {{ .Content }}
     </article>
+    <div class="galerie">
+        <img src="{{ .Params.image }}"/>
+    </div>
+    
+    {{ if isset .Params "galleryImages" }}
+    <ul class="galerie">
+    {{ range .Params.galleryImages}}
+    <li>
+    <img src="{{ .Params.image }}" >
+    </li>
+    {{ end }}
+    </ul>
+    {{ end }}
 
     <!-- IMAGE PROBLEME : saved in static but not in resources ! -->
 
