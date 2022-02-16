@@ -2,17 +2,18 @@
 {{- partial "head.html" . -}}
 {{- partial "header.html" . -}}
 <style>
+    section {
+        position: relative;
+        padding-bottom: 60px;
+    }
     article {
         position: relative;
-        padding: 0 100px 100px 30px;
+        padding: 0 100px 0 30px;
 
     }
     .titre-date {margin-bottom: 20px;}
     img {width: 100%;}
-    .single-post {
-        margin: 0px 0px;
-        padding: 0px; 
-    }
+    
     .description {
         width: 50%;
         font-style: italic;
@@ -44,15 +45,26 @@
     <article class="content">
       {{ .Content }}
     </article>
-    <div class="galerie">
-        <img src="{{ .Params.image }}"/>
+
+    
+    <div>
+    <img src="{{ .Params.galleryImages }}" >
     </div>
+    
+
+    {{ range $.Site.Data.photos }}
+            <div class="item">
+                <img src="{{ .src }}?nf_resize=fit&w=300">
+            </div>
+    {{ end }}
+
     
     {{ if isset .Params "galleryImages" }}
     <ul class="galerie">
+        Hello again
     {{ range .Params.galleryImages}}
     <li>
-    <img src="{{ .Params.image }}" >
+    <img src="{{ .Params.galleryImages }}" >
     </li>
     {{ end }}
     </ul>
