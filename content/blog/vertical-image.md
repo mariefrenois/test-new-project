@@ -1,6 +1,6 @@
 ---
 title: Vertical Image
-image: /img/inspi.jpeg
+image: /img/_dsc4651weekend3.jpg
 date: 16th Feb 22
 description: image verticale
 ---
