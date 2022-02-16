@@ -3,20 +3,24 @@
 
 <style>
     ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
         padding-inline-start: 0;
-        margin: 40px;
+        margin: 0px;
+        -moz-column-width: 21em;
+        -webkit-column-width: 21em;
+        -moz-column-gap: 0;
+        -webkit-column-gap: 0;
     }
     li {
-        display: grid;
-        padding: 10px;
-        background-color: hotpink;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        width:  100%; 
+        float:none;
     }
-    li:hover {background-color: rgba(255, 105, 180, 0.685);}
-    a {text-decoration: none; color: black;}
-    h4 {text-align: center;}
+    /* li:hover {background-color: rgba(255, 105, 180, 0.685);} */
+    /* a {text-decoration: none; color: black;} */
+    h4 {font-family:sans-serif; text-emphasis: left; text-transform: uppercase; margin: 0; font-weight: 100;}
+    
     p {font-style: italic;}
 </style>
 <div id="content" class="{{ .Type }} {{ .Slug }}">
@@ -27,8 +31,11 @@
             <li>
             <a href="{{ .RelPermalink }}">
                 <img src="{{ .Params.image }}" width="100%"/>
-                <h4>{{ .Title }}-{{ .Date.Format "02.01.2006" }}</h4>
-                <p class="description">{{ .Params.description }}</p>
+                <h4>{{ .Title }}
+                    <!-- <span>{{ .Date.Format "02.01.2006" }}</span> -->
+                </h4>
+                <!-- <p class="description">{{ .Params.description }}</p> -->
+                
                 
             </a>
             </li>

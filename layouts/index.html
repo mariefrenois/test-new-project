@@ -3,7 +3,7 @@
     <div id="content" class="{{ .Type }} {{ .Slug }}">
       {{- .Content -}}
 
-            {{ with .Site.GetPage "/blog" }}
+            {{ with .Site.GetPage "/blog/" }}
                 <a href="{{ .RelPermalink }}">
                 {{ .Title }}</a>
             {{ end }}
@@ -11,5 +11,8 @@
       
 
     </div>
+
+    
+
 {{- partial "footer.html" . -}}
   

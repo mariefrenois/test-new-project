@@ -1,9 +1,39 @@
-<footer style="font-size: 14px; text-align: right; position: relative; bottom: 0; right: 0; padding: 10px;">
-    <div class='links'>
-        <a href='/'>home</a> |
-        <a href='/blog/'>articles</a> |
-        <a href='/about/'>about</a>
-      </div>
+<style>
+  #menu {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.9178046218487395) 0%, rgba(0,0,0,0) 55%);
+  }
+  h3 {
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    margin: 0;
+    font-family: sans-serif; 
+    font-weight: 100;
+    font-size: 30px;
+  }
+</style>
+
+<div id="menu">
+  <h3>
+    {{ with .Site.GetPage }}
+                <a href="{{ .RelPermalink }}">
+                    Testing Hugo & Netlify</a>
+            {{ end }}
+            <div class='links' style="float: left; position: fixed; bottom: 0; left: 0 ">
+              <a href='/blog/'>projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <a href='/about/'>about</a>
+            </div>
+  </h3>
+</div>
+
+<footer style="font-size: 10px; text-align: right; position: fixed; bottom: 0; left: 50%; transform: translate(-50%);">
+    
       &copy; Marie Frenois with GoHugo & Netlify</footer>
 </body>
 </html>

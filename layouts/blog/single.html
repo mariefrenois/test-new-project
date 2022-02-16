@@ -2,12 +2,16 @@
 {{- partial "head.html" . -}}
 {{- partial "header.html" . -}}
 <style>
+    article {
+        position: relative;
+        padding: 0 100px 100px 30px;
+
+    }
     .titre-date {margin-bottom: 20px;}
-    img {width: 50%;}
+    img {width: 100%;}
     .single-post {
-        margin: 20px 50px;
-        padding: 30px; 
-        background-color: hotpink;
+        margin: 0px 0px;
+        padding: 0px; 
     }
     .description {
         width: 50%;
@@ -26,15 +30,13 @@
 
 </style>
 <section class="single-post">
-
+    <img src="{{ .Params.image }}"/>
     <div class="titre-date" style="font-family: sans-serif;">
         <span style="text-transform: uppercase; font-size: 40px;">{{ .Title }}</span>
         <span style="float: right;" class="date">{{ .Date.Format "02.01.2006" }}</span>
     </div>
     
-    <img src="{{ .Params.image }}"/>
-    
-    <p class="description">{{ .Params.description }}</p>
+    <!-- <p class="description">{{ .Params.description }}</p> -->
     <article class="content">
       {{ .Content }}
     </article>
