@@ -3,7 +3,7 @@ title: about
 Texte: >-
   Gloss est un duo de designeuses graphique et web fondé par Marie Frénois  et
   Laurie Giraud, situé à Bruxelles. 
-         Habité par des réﬂexions autour du féminisme et de l’écologie, Gloss travaille à un empathic graphic design(1) et fabrique des objets-contenants prenant la forme de médias imprimés comme numériques  ;  identités visuelles, éditions, afﬁches, sites web… Gloss fait groupe en rassemblant différentes habilités, compétences et outils aﬁn de répondre au mieux aux attentes de chaque projet. 
+         Habité par des réﬂexions autour du féminisme et de l’écologie, Gloss travaille à un empathic graphic design<span class="color">(1)</span> et fabrique des objets-contenants prenant la forme de médias imprimés comme numériques  ;  identités visuelles, éditions, afﬁches, sites web… Gloss fait groupe en rassemblant différentes habilités, compétences et outils aﬁn de répondre au mieux aux attentes de chaque projet. 
          En parallèle au travail de commande, chacune développe et nourrit une activité singulière: chercheuse, artiste, collectionneuse, cueilleuse comme autant de façons de vivre ensemble au monde, d’entrer en réaction(3) et d’appréhender notre époque. 
 
   > > Pour cela l’écoute, la considération et l’inclusivité seront toujours reines dans une tentative de connexion complice avec notre environnement proche.
