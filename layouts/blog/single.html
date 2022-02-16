@@ -35,6 +35,10 @@
 
 </style>
 <section class="single-post">
+
+    
+
+
     <img src="{{ .Params.image }}"/>
     <div class="titre-date" style="font-family: sans-serif;">
         <span style="text-transform: uppercase; font-size: 40px;">{{ .Title }}</span>
@@ -47,27 +51,18 @@
     </article>
 
     
-    <div>
+    
     <img src="{{ .Params.galleryImages }}" >
-    </div>
     
 
-    {{ range $.Site.Data.photos }}
-            <div class="item">
-                <img src="{{ .src }}?nf_resize=fit&w=300">
-            </div>
-    {{ end }}
-
     
-    {{ if isset .Params "galleryImages" }}
-    <ul class="galerie">
-        Hello again
-    {{ range .Params.galleryImages}}
-    <li>
-    <img src="{{ .Params.galleryImages }}" >
-    </li>
-    {{ end }}
-    </ul>
+
+    {{range .Params.galleryImages }}
+    
+        <li>
+            hellllllo
+        <img src=" " alt="hi"/>
+        </li>
     {{ end }}
 
     <!-- IMAGE PROBLEME : saved in static but not in resources ! -->

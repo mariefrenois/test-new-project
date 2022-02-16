@@ -2,6 +2,10 @@
 {{- partial "header.html" . -}}
 
 <style>
+    #content {
+        position: relative;
+        padding-bottom: 30px;
+    }
     ul {
         padding-inline-start: 0;
         margin: 0px;
@@ -30,7 +34,12 @@
             
             <li>
             <a href="{{ .RelPermalink }}">
-                <img src="{{ .Params.image }}" width="100%"/>
+
+                <img src="{{ .Params.image }}?nf_resize=smartcrop&w=300&h=300" width="100%"/> 
+                
+
+
+
                 <h4>{{ .Title }}
                     <!-- <span>{{ .Date.Format "02.01.2006" }}</span> -->
                 </h4>
