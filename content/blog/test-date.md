@@ -9,4 +9,4 @@ description: Another Pix
 ---
 Hello it's me 
 
-![](/img/_dsc4608.jpg)
+![]()
