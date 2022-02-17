@@ -1,0 +1,53 @@
+ {{- partial "head.html" . -}}
+ <style>
+  #content {
+      position: relative;
+      padding-bottom: 30px;
+  }
+  ul {
+      padding-inline-start: 0;
+      margin: 0px;
+      -moz-column-width: 21em;
+      -webkit-column-width: 21em;
+      -moz-column-gap: 0;
+      -webkit-column-gap: 0;
+  }
+  li {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      width:  100%; 
+      float:none;
+  }
+  /* li:hover {background-color: rgba(255, 105, 180, 0.685);} */
+  /* a {text-decoration: none; color: black;} */
+  h4 {font-family:sans-serif; text-emphasis: left; text-transform: uppercase; margin: 0; font-weight: 100;}
+  
+  p {font-style: italic;}
+</style>
+    {{- partial "header.html" . -}}
+    
+    <div id="content" class="{{ .Type }} {{ .Slug }}">
+      <ul>
+      {{ with .Site.GetPage "/projets" }}
+        {{ range (where .Pages "Section" "projets") }}
+            
+            <li>
+              <a href="{{ .RelPermalink }}">
+
+                  <img src="{{ .Params.image }}?nf_resize=smartcrop&w=300&h=300" width="100%"/> 
+                  <h4>{{ .Title }}</h4>
+              </a>
+            </li>
+          {{ end }}
+
+        {{ end }}
+      </ul>
+
+    </div>
+
+    
+
+{{- partial "footer.html" . -}} 
+
+

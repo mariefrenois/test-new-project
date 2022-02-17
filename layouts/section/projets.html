@@ -27,9 +27,9 @@
     
     p {font-style: italic;}
 </style>
-{{ define "main" }}
+
 <div id="content" class="{{ .Type }} {{ .Slug }}">
-   
+      
     <ul>
             {{ range (where .Pages "Section" "projets") }}
             
@@ -51,8 +51,8 @@
             </li>
             {{ end }}
         </ul>
-        
+      
 </div>
-{{end}}
+
 {{- partial "footer.html" . -}}
 

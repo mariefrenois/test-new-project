@@ -3,9 +3,13 @@
     
     <div id="content" class="{{ .Type }} {{ .Slug }}">
       {{ .Title }}
-
-            
-        
+      {{ with .Params.intro }}
+      {{ .Params.intro }}
+      {{ end }}     
+      {{ with .Site.GetPage "/contact.md" }}
+      {{ .Title }}
+      {{- .Content -}}
+    {{ end }}  
       
 
     </div>

@@ -1,0 +1,75 @@
+
+{{- partial "head.html" . -}}
+{{- partial "header.html" . -}}
+<style>
+  section {
+      position: relative;
+      padding-bottom: 60px;
+      color: grey;
+  }
+  article {
+      position: relative;
+      padding: 0 30px 0 30px;
+      font-size: 20px;
+  }
+  .texte {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    text-indent: 30px;
+    }
+  ul.legende {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    font-size: 14px !important;
+    list-style: none;
+    padding-inline-start: 0;
+    grid-gap: 20px;
+    text-align: justify;
+    color: #78e1a2;
+  }
+/*    CONTACT    */
+  .contact {
+      margin-top: 20px;
+      font-size: 30px;
+  }
+  
+  
+</style>
+
+<section id="content">
+  
+    <article class="content">
+        {{ if .Params.Textefr }}
+      {{  with .Site.GetPage "/about.md" }}
+    <div class="texte">    
+        <p class="description">{{ .Params.Textefr }} </p>
+        <p class="description">{{.Params.TexteEn}}</p>
+    </div>
+    <ul class="legende">
+      <li>{{ .Params.legende1 }}</li>
+      <li>{{ .Params.legende2 }}</li>
+      <li>{{ .Params.legende3 }}</li>
+    </ul>
+    {{ end }}  
+    {{ end }}  
+
+    {{ if .Params.intro }}
+    {{  with .Site.GetPage "/contact.md" }}
+    <div class="contact">    
+        {{ .Params.intro }}
+       
+    </div>
+   
+    {{ end }}  
+    {{ end }}  
+    </article>
+        
+
+</section>
+
+   
+
+{{- partial "footer.html" . -}}
+

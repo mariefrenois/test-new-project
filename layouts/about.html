@@ -24,13 +24,20 @@
 </style>
 
 <section id="content">
+  HEKLKKKIOO
     <article class="content">
-    
-    
-    {{ .Title }}
+      {{ with .Site.GetPage "/about.md" }}
+        {{ .Title }}
+        {{- .Content -}}
+        {{ .Params.Textefr }}
+      
+
+
+      
+   
     
     <p class="description">
-      {{ .Textefr }}
+      {{ .Params.Textefr }}
     </p>
     <p class="description">
       {{.Params.TexteEn}}
@@ -41,7 +48,7 @@
       <li>{{ .Params.legende2 }}</li>
       <li>{{ .Params.legende3 }}</li>
     </ul>
-    
+    {{ end }}  
     </article>
         
 
