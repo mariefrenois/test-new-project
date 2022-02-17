@@ -4,9 +4,9 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'projets'
+    label: 'Projets'
+    folder: 'content/projets'
     create: true
     # slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     slug: '{{slug}}'
@@ -20,4 +20,31 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime', default: "", format: 'Do MMM YY', date_format: "DD.MM.YYYY"}
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/about.md"
+        slug: '{{slug}}'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Textefr, name: texteFr, widget: markdown}
+          - {label: Texteen, name: texteEn, widget: markdown}
+          - {label: Legende1, name: legende1, widget: markdown}
+          - {label: Legende2, name: legende2, widget: markdown}
+          - {label: Legende3, name: legende3, widget: markdown}
+      - label: "Contact Page"
+        name: "contact"
+        file: "content/contact.md"
+        slug: '{{slug}}'
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+              
+  
+
+
+
 

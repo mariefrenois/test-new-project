@@ -9,6 +9,7 @@
     article {
         position: relative;
         padding: 0 100px 0 30px;
+        font-size: 20px;
 
     }
     .titre-date {margin-bottom: 20px;}
@@ -25,9 +26,7 @@
         position: relative;
         z-index: 1000;
     }
-    article {
-        font-size: 20px;
-    }
+    
     ul.galerie {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -53,15 +52,14 @@
     
     
     <img src="{{ .Params.galleryImages }}" >
-    
+    <img src="{{ range .Params.galleryImages }}{{ . }}{{ end }}" />
 
     
 
     {{range .Params.galleryImages }}
-    
         <li>
             hellllllo
-        <img src=" " alt="hi"/>
+        <img src="" alt="hi"/>
         </li>
     {{ end }}
 

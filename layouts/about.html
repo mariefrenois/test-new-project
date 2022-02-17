@@ -1,0 +1,50 @@
+
+{{- partial "head.html" . -}}
+{{- partial "header.html" . -}}
+<style>
+  section {
+      position: relative;
+      padding-bottom: 60px;
+  }
+  article {
+      position: relative;
+      padding: 0 100px 0 30px;
+      font-size: 20px;
+  }
+  p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+  ul.legende {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0;
+    font-size: 14px !important;
+  }
+</style>
+
+<section id="content">
+    <article class="content">
+    
+    
+    {{ .Title }}
+    
+    <p class="description">
+      {{ .Textefr }}
+    </p>
+    <p class="description">
+      {{.Params.TexteEn}}
+    </p>
+    
+    <ul class="legende">
+      <li>{{ .Params.legende1 }}</li>
+      <li>{{ .Params.legende2 }}</li>
+      <li>{{ .Params.legende3 }}</li>
+    </ul>
+    
+    </article>
+        
+
+</section>
+{{- partial "footer.html" . -}}
+

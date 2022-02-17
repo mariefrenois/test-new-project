@@ -27,10 +27,11 @@
     
     p {font-style: italic;}
 </style>
+{{ define "main" }}
 <div id="content" class="{{ .Type }} {{ .Slug }}">
    
     <ul>
-            {{ range (where .Pages "Section" "blog") }}
+            {{ range (where .Pages "Section" "projets") }}
             
             <li>
             <a href="{{ .RelPermalink }}">
@@ -52,6 +53,6 @@
         </ul>
         
 </div>
-
+{{end}}
 {{- partial "footer.html" . -}}
 
