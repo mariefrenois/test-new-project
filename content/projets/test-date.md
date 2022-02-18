@@ -1,6 +1,7 @@
 ---
 title: Guide Intime du Nord Ouest
 image: /img/_dsc4614.jpg
+align: vertical
 galleryImages:
   - /img/_dsc4534.jpg
   - /img/_dsc4608.jpg
