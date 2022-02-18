@@ -1,6 +1,7 @@
 ---
 title: erg Brochure
 image: /img/_dsc4683.jpg
+align: vertical
 date: 16th Feb 22
 description: image verticale
 ---
