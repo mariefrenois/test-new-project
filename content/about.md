@@ -1,17 +1,23 @@
 ---
-title: "About"
+title: About
 texteFr: >-
   Gloss est un duo de designeuses graphique et web fondé par Marie Frénois et
   Laurie Giraud, situé à Bruxelles. 
 
 
-  Habité par des réﬂexions autour du féminisme et de l’écologie, Gloss travaille à un empathic graphic design<span class="color">(1)</span> et fabrique des objets-contenants<span class="color">(2)</span> prenant la forme de médias imprimés comme numériques  ;  identités visuelles, éditions, afﬁches, sites web… Gloss fait groupe en rassemblant différentes habilités, compétences et outils aﬁn de répondre au mieux aux attentes de chaque projet. En parallèle au travail de commande, chacune développe et nourrit une activité singulière: chercheuse, artiste, collectionneuse, cueilleuse comme autant de façons de vivre ensemble au monde, d’entrer en réaction<span class="color">(3)</span> et d’appréhender notre époque. <em>Pour cela l’écoute, la considération et l’inclusivité seront toujours reines dans une tentative de connexion complice avec notre environnement proche.</em>
+  Habité par des réﬂexions autour du féminisme et de l’écologie, Gloss travaille à un empathic graphic design**(1)** et fabrique des objets-contenants**(2)** prenant la forme de médias imprimés comme numériques  ;  identités visuelles, éditions, afﬁches, sites web… Gloss fait groupe en rassemblant différentes habilités, compétences et outils aﬁn de répondre au mieux aux attentes de chaque projet. En parallèle au travail de commande, chacune développe et nourrit une activité singulière: chercheuse, artiste, collectionneuse, cueilleuse comme autant de façons de vivre ensemble au monde, d’entrer en réaction**(3)** et d’appréhender notre époque.  
+
+
+  *Pour cela l’écoute, la considération et l’inclusivité seront toujours reines dans une tentative de connexion complice avec notre environnement proche.*
 texteEn: >-
   Gloss is a duo of graphic and web designers founded by Marie Frénois and
   Laurie Giraud, located in Brussels.
 
 
-  Inhabited by reﬂections around feminism and ecology, Gloss works on an empathetic graphic design<span class="color">(1)</span> and manufactures objects-containers<span class="color">(2)</span> taking the form of both print and digital media; visual identities, publications, posters, websites… Gloss forms a group by bringing together different abilities, skills and tools in order to best meet the expectations of each project. In parallel with commissioning work, each develops and nurtures a singular activity: researcher, artist, collector, picker as so many ways of living together in the world, of reacting<span class="color">(3)</ span> and apprehend our times. <em>For this, listening, consideration and inclusiveness will always be queens in an attempt to connect with our close environment.</em>
+  Inhabited by reﬂections around feminism and ecology, Gloss works on an empathetic graphic design**(1)** and manufactures objects-containers**(2)** taking the form of both print and digital media; visual identities, publications, posters, websites… Gloss forms a group by bringing together different abilities, skills and tools in order to best meet the expectations of each project. In parallel with commissioning work, each develops and nurtures a singular activity: researcher, artist, collector, picker as so many ways of living together in the world, of reacting**(3)** and apprehend our times.   
+
+
+  *For this, listening, consideration and inclusiveness will always be queens in an attempt to connect with our close environment.*
 legende1: "1. <br> Nous souhaitons ici réfléchir à une pratique du design
   graphique inclusive, interrogeant les pouvoirs de domination et les
   discriminations systémiques en place, pour tenter de \\\"rendre les histoires
