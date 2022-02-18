@@ -1,7 +1,7 @@
 ---
 title: About
 texteFr: >-
-  Gloss est un duo de designeuses graphique et web fondé par Marie Frénois et
+  Gloss est un duo de designeuses graphique et web composé par Marie Frénois et
   Laurie Giraud, situé à Bruxelles. 
 
 
