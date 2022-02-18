@@ -1,8 +1,7 @@
 ---
 title: Contact
 intro: |-
-  ```html
-  <a href="mailto:hello@glossgroup.eu">hello@glossgroup.eu</a>
-  <br>Pachecolaan 34,1000 Brussel
-  ```
+  [hello@glossgroup.eu](mailto:hello@glossgroup.eu)         
+
+  Pachecolaan 34,1000 Brussel
 ---
