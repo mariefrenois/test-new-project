@@ -1,6 +1,7 @@
 ---
 title: crypto no thanks
 image: /img/capture-d’écran-2022-02-16-à-13.10.51.jpg
+align: square
 date: 16th Feb 22
 description: autocollant for no cryptocurrency
 ---
