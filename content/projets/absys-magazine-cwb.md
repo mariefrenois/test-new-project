@@ -1,6 +1,7 @@
 ---
 title: Absys Magazine CWB
 image: /img/1jpg.jpg
+align: horizotal
 galleryImages:
   - /img/2jpg.jpg
   - /img/3jpg.jpg
