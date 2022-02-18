@@ -18,25 +18,12 @@ texteEn: >-
 
 
   *For this, listening, consideration and inclusiveness will always be queens in an attempt to connect with our close environment.*
-legende1: "1. <br> Nous souhaitons ici réfléchir à une pratique du design
-  graphique inclusive, interrogeant les pouvoirs de domination et les
-  discriminations systémiques en place, pour tenter de \\\"rendre les histoires
-  faibles plus fortes et les histoires fortes plus faibles\\\", comme le déclare
-  Donna Haraway dans \\\"Story Telling for Earthy Survival\\\" (Terranova, F.
-  (2016) Donna Haraway : Story Telling for Earthly Survival (43:20 - 43:23 mm).
-  Spectre Productions, Atelier Graphoui). Il s'agit ici de prendre soin du
-  monde; humain-x-e, non-humain-x-es, animaux, insectes, minéraux ou phénomènes
-  climatiques… et réfléchir à une pratique du design graphique soucieuse
-  (attentive) et en réaction. Penser un site web de façon plus écologique dans
-  sa structure et son contenu(1.a.), créer des glyphes inclusives, (être/entrer
-  en) médiation et (en) contact intime avec notre environnement local sont tant
-  de tentatives pour construire un monde plus optimiste et joyeux. <br> 1.a.
-  Ici, il s'agit d'être conscient.e.s des ressources énergivores qu'utilise le
-  numérique, en commençant par repenser outils, structures et contenus comme une
-  tentative de réponse à une question simple mais radicale : qu’est-ce qui est
-  nécessaire, essentiel et qu’est-ce qui peut être sacrifié ?"
-legende2: "2. <br> Afin d'illustrer notre propos, nous empruntons volontiers
-  l'image du contenant amenée par l'autrice féministe Ursula K. Le Guin dans la
+legende1: >-
+  1.  
+
+  Nous souhaitons ici réfléchir à une pratique du design graphique inclusive, interrogeant les pouvoirs de domination et les discriminations systémiques en place, pour tenter de \"rendre les histoires faibles plus fortes et les histoires fortes plus faibles\", comme le déclare Donna Haraway dans \"Story Telling for Earthy Survival\" (Terranova, F. (2016) Donna Haraway : Story Telling for Earthly Survival (43:20 - 43:23 mm). Spectre Productions, Atelier Graphoui). Il s'agit ici de prendre soin du monde; humain-x-e, non-humain-x-es, animaux, insectes, minéraux ou phénomènes climatiques… et réfléchir à une pratique du design graphique soucieuse (attentive) et en réaction. Penser un site web de façon plus écologique dans sa structure et son contenu(1.a.), créer des glyphes inclusives, (être/entrer en) médiation et (en) contact intime avec notre environnement local sont tant de tentatives pour construire un monde plus optimiste et joyeux. <br> 1.a. Ici, il s'agit d'être conscient.e.s des ressources énergivores qu'utilise le numérique, en commençant par repenser outils, structures et contenus comme une tentative de réponse à une question simple mais radicale : qu’est-ce qui est nécessaire, essentiel et qu’est-ce qui peut être sacrifié ?
+legende2: "2. Afin d'illustrer notre propos, nous empruntons volontiers l'image
+  du contenant amenée par l'autrice féministe Ursula K. Le Guin dans la
   \\\"théorie de la fiction panier\\\" (Le Guin, U. K., ( traduction ) Bonheur,
   J., (2018). La théorie de la fiction-panier. ( p. 1—4 ). Le
   Partage. \\[http://partage-le.com/2018/01/8645](https://www.partage-le.com/20\
@@ -54,15 +41,15 @@ legende2: "2. <br> Afin d'illustrer notre propos, nous empruntons volontiers
   d'habiter cette philosophie, en prenant en compte le but même du design
   graphique : produire des formes qui portent un contenu tout en étant
   attentif·ve·s aux pouvoirs de ces dispositifs."
-legende3: "3. <br> Car notre planète est endommagée, Donna Haraway dans
-  \\\"Staying with the trouble\\\" (Haraway, D., Staying with the Trouble:
-  Making Kin in the Chthulucene. (2016). Duke University Press Books.) nous
-  invite à prendre en compte cet état et à habiter la Terre avec une faculté de
-  réponse et de réaction (Ce qu'elle nomme response-ability). Ne pas fermer les
-  yeux sur nos problématiques actuelles, mais vivre avec, penser et agir sur
-  celles-ci. Une position complexe de laquelle émerge une faculté créatrice.
-  Semer et susciter le trouble pour qu’adviennent des réponses nouvelles,
-  différentes et puissantes : et aussi pour nous rendre tout simplement capables
-  de réponse, ici et maintenant, alors même que cette capacité est mise à mal:
-  il est temps de chercher à construire des réparations partielles."
+legende3: "3. Car notre planète est endommagée, Donna Haraway dans \\\"Staying
+  with the trouble\\\" (Haraway, D., Staying with the Trouble: Making Kin in the
+  Chthulucene. (2016). Duke University Press Books.) nous invite à prendre en
+  compte cet état et à habiter la Terre avec une faculté de réponse et de
+  réaction (Ce qu'elle nomme response-ability). Ne pas fermer les yeux sur nos
+  problématiques actuelles, mais vivre avec, penser et agir sur celles-ci. Une
+  position complexe de laquelle émerge une faculté créatrice. Semer et susciter
+  le trouble pour qu’adviennent des réponses nouvelles, différentes et
+  puissantes : et aussi pour nous rendre tout simplement capables de réponse,
+  ici et maintenant, alors même que cette capacité est mise à mal: il est temps
+  de chercher à construire des réparations partielles."
 ---
