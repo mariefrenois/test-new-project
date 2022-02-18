@@ -42,7 +42,9 @@
   
     <article class="content">
         {{ if .Params.Textefr }}
+        
       {{  with .Site.GetPage "/about.md" }}
+      
     <div class="texte">    
         <p class="description">{{ .Params.Textefr }} </p>
         <p class="description">{{.Params.TexteEn}}</p>

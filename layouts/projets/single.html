@@ -7,62 +7,90 @@
         padding-bottom: 60px;
         color: grey;
     }
-    article {
-        position: relative;
-        padding: 0 100px 0 30px;
-        font-size: 20px;
+    
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
+
+    }
+    .grid-1 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 5px;
 
     }
     .titre-date {margin-bottom: 20px;}
     img {width: 100%;}
-    
-    .description {
-        width: 50%;
-        font-style: italic;
-        float: right;
-        font-size: 40px;
-        transform: rotate(-15deg);
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        color: #c0e8ff;
+    article {
         position: relative;
-        z-index: 1000;
+        padding: 0;
+        font-size: 20px;
     }
     
-    ul.galerie {
+    
+    ul {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
+        list-style: none;
+        margin: 0;
+        padding-inline: 0;
     }
 
 </style>
 <section class="single-post">
 
+
     
-
-
-    <img src="{{ .Params.image }}"/>
-    <div class="titre-date" style="font-family: sans-serif;">
-        <span style="text-transform: uppercase; font-size: 40px;">{{ .Title }}</span>
-        <span style="float: right;" class="date">{{ .Date.Format "02.01.2006" }}</span>
+    
+  
+    
+    {{ if eq .Params.align "vertical" "square" }}
+    <div class="grid-2">
+        <img src="{{ .Params.image }}"/>
+        <div class="titre-date" style="font-family: sans-serif;">
+            <span style="text-transform: uppercase; font-size: 40px;">{{ .Title }}</span>
+            <span style="float: right;" class="date">{{ .Date.Format "02.01.2006" }}</span>
+            <article class="content">
+                {{ .Content }}
+            </article>
+        </div>
     </div>
-    
+        {{end}}
+
+        {{ if eq .Params.align "horizotal" }}
+    <div class="grid-1">
+        <img src="{{ .Params.image }}"/>
+        <div class="titre-date" style="font-family: sans-serif;">
+            <span style="text-transform: uppercase; font-size: 40px;">{{ .Title }}</span>
+            <span style="float: right;" class="date">{{ .Date.Format "02.01.2006" }}</span>
+            <article class="content">
+                {{ .Content }}
+            </article>
+        </div>
+    </div>
+        {{end}}
+   
+   
+
     <!-- <p class="description">{{ .Params.description }}</p> -->
-    <article class="content">
-      {{ .Content }}
-    </article>
+    
+
+    <ul>
+        {{ range .Params.galleryImages }}
+            <li>
+                <img src="{{ . }}"/>
+            </li>
+        {{ end }}
+    </ul>   
+
+    
+        
+    
 
     
     
-    <img src="{{ .Params.galleryImages }}" >
-    <img src="{{ range .Params.galleryImages }}{{ . }}{{ end }}" />
-
-    
-
-    {{range .Params.galleryImages }}
-        <li>
-            hellllllo
-        <img src="" alt="hi"/>
-        </li>
-    {{ end }}
 
     <!-- IMAGE PROBLEME : saved in static but not in resources ! -->
 

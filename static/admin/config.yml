@@ -16,10 +16,12 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       # - {label: "URL", name: url, widget: string}
       - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Align Content", name: "align", widget: "select", options: ["vertical", "horizotal", "square"]}
       - { label: "Gallery", name: "galleryImages", widget: "list", summary: '{{fields.image}}', field: {label: Gallery Image, name: imgSrc, widget: image}}
       - { label: 'Publish Date', name: 'date', widget: 'datetime', default: "", format: 'Do MMM YY', date_format: "DD.MM.YYYY"}
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      
 
   - name: 'pages'
     label: 'Pages'
@@ -29,19 +31,19 @@ collections:
         file: "content/about.md"
         slug: '{{slug}}'
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Textefr, name: texteFr, widget: markdown}
-          - {label: Texteen, name: texteEn, widget: markdown}
-          - {label: Legende1, name: legende1, widget: markdown}
-          - {label: Legende2, name: legende2, widget: markdown}
-          - {label: Legende3, name: legende3, widget: markdown}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Textefr', name: 'texteFr', widget: 'markdown'}
+          - {label: 'Texteen', name: 'texteEn', widget: 'markdown'}
+          - {label: 'Legende1', name: 'legende1', widget: 'markdown'}
+          - {label: 'Legende2', name: 'legende2', widget: 'markdown'}
+          - {label: 'Legende3', name: 'legende3', widget: 'markdown'}
       - label: "Contact Page"
         name: "contact"
         file: "content/contact.md"
         slug: '{{slug}}'
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Intro', name: 'intro', widget: 'markdown'}
               
   
 
